@@ -1,2 +1,2 @@
-type MidiPitch = number;
-type PitchClass = number;
+export type MidiPitch = number;
+export type PitchClass = number;
