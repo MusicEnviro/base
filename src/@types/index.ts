@@ -14,3 +14,5 @@ export interface IRect {
 	bottom: number;
 }
 
+export * from './math'
+
