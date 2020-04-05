@@ -1,4 +1,6 @@
-export interface IRange {
-    min: number;
-    max: number;
+
+
+export interface IRange<T> {
+    min: T;
+    max: T;
 }
