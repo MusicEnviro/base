@@ -1,6 +1,8 @@
 
 
-export interface IRange<T> {
+export interface IRange<T = number> {
     min: T;
     max: T;
+    step?: T;
 }
+
