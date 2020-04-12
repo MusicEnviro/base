@@ -8,10 +8,10 @@ export function stepType(step: DiatonicStep): DiatonicStepType {
 	switch (step % 7) {
 		case 0:
 			return 'Root';
-		case 5:
+		case 4:
 			return 'Fifth';
-		case 3:
-		case 7:
+		case 2:
+		case 6:
 			return 'OtherChordNote';
 		default:
 			return 'NonChordNote';
