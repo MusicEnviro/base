@@ -11,9 +11,9 @@ export function stepType(step: DiatonicStep): DiatonicStepType {
 		case 4:
 			return 'Fifth';
 		case 2:
-		case 6:
 			return 'OtherChordNote';
 		default:
 			return 'NonChordNote';
 	}
 }
+
