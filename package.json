@@ -1,6 +1,6 @@
 {
 	"name": "@musicenviro/base",
-	"version": "0.2.6",
+	"version": "0.2.7",
 	"description": "global types and basic shared functions",
 	"main": "lib/index.js",
 	"scripts": {
