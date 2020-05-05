@@ -8,6 +8,7 @@
 		"preserveConstEnums": true,
 		"sourceMap": true,
 		"outDir": "./lib",
-		"noImplicitUseStrict": true
+		"noImplicitUseStrict": true,
+		"esModuleInterop": true
 	}
 }
