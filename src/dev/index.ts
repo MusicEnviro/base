@@ -30,3 +30,12 @@ export function useWatch(props: any, name: string) {
         if (enabled) console.log(name, 'UPDATING')
     }, [props])
 }
+
+
+export function useWatchPropChanges<T>(props: T) {
+    const prevProps = React.useRef<T>()
+	if (prevProps.current) {console.log(Object.keys(props).map(key => 
+		(prevProps.current as any)[key] === (props as any)[key] ? null : key))
+		}
+	prevProps.current = props
+}

@@ -6,14 +6,14 @@ console.log('instantiating mouse monitor');
 export let mouseDown = false;
 export let clientMousePosition: IPoint = null;
 
-window.addEventListener('mousedown', handleMouseDown);
-window.addEventListener('mouseup', handleMouseUp);
+typeof window !== 'undefined' && window.addEventListener('mousedown', handleMouseDown);
+typeof window !== 'undefined' && window.addEventListener('mouseup', handleMouseUp);
 // window.addEventListener('mousemove', handleMouseMove);
 
 export function dispose() {
-	window.removeEventListener('mousedown', handleMouseDown);
-	window.removeEventListener('mouseup', handleMouseUp);
-	// window.removeEventListener('mousemove', handleMouseMove);
+	typeof window !== 'undefined' && window.removeEventListener('mousedown', handleMouseDown);
+	typeof window !== 'undefined' && window.removeEventListener('mouseup', handleMouseUp);
+	typeof window !== 'undefined' && window.removeEventListener('mousemove', handleMouseMove);
 }
 
 function handleMouseDown() {
